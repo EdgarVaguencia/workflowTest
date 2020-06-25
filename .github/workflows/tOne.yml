@@ -15,7 +15,7 @@ jobs:
       - name: Tranquilos va empezando
       - uses: actions/checkout@master
       - name: Agarrence que lleva bala
-      run: git merge chida
+      - run: git merge chida
       - name: Les va
       run: git push "https://${github.actor}:${github.token}@github.com/${github.repository}" HEAD:master
 
