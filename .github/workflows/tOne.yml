@@ -21,6 +21,6 @@ jobs:
 
   seguns:
     name: El segundo
-      needs: primis
+    needs: primis
     steps:
       - name: Ya termino mergas
