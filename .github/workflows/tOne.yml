@@ -1,0 +1,26 @@
+name: ignorolo
+
+on:
+  push:
+    branches:
+      - chida
+    branches-ignore:
+      - chafa
+
+jobs:
+  primis:
+    name: El primero
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tranquilos va empezando
+      - uses: actions/checkout@master
+      - name: Agarrence que lleva bala
+      run: git merge chida
+      - name: Les va
+      run: git push "https://${github.actor}:${github.token}@github.com/${github.repository}" HEAD:master
+
+  seguns:
+    name: El segundo
+      needs: primis
+    steps:
+      - name: Ya termino mergas
