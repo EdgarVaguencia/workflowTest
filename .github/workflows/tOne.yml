@@ -19,6 +19,7 @@ jobs:
 
   seguns:
     name: El segundo
+    runs-on: ubuntu-latest
     needs: primis
     steps:
       - name: Ya termino mergas
