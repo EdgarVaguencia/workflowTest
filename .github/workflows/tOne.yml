@@ -22,3 +22,4 @@ jobs:
     needs: primis
     steps:
       - name: Ya termino mergas
+      - run: echo "Fin"
