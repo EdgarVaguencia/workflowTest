@@ -15,7 +15,7 @@ jobs:
       - name: Agarrence que lleva bala
         run: git merge chida
       - name: Les va
-        run: git push "https://${{github.actor}}:${{github.token}}@github.com/${{github.repository}}" HEAD:master
+        run: git push "https://${{github.actor}}:${{github.token}}@github.com/${{github.repository}}.git" HEAD:master
 
   seguns:
     name: El segundo
